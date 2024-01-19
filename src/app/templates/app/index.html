@@ -14,7 +14,11 @@
 
   <div>
     <p>出力: RTO</p>
-    <p>ほげ</p>
-  </div>
+    {% for item in sample_rto %}
+      <p>Time: {{ forloop.counter }}</p>
+      <p>{{ item }}</p>
+      <hr />
+    {% endfor %}
+    </div>
 </body>
 </html>
