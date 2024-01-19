@@ -15,7 +15,7 @@ def calc_rto(rtt_lst):
       devrtt = (1 - beta) * devrtt + beta * abs(rtt - ertt)
       ertt = (1 - alpha) * ertt + alpha * rtt
       rto = ertt + (4 * devrtt)
-    ret.append([i, rtt, ertt, devrtt, rto])
+    ret.append([rtt, ertt, devrtt, rto])
   
   return ret
     
